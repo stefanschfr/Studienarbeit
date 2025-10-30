@@ -1,0 +1,65 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Descr:       Vorlage für Berichte der DHBW-Karlsruhe, Ein Kapitel
+%% Author:      Prof. Dr. Jürgen Vollmer, vollmer@dhbw-karlsruhe.de
+%% $Id: kapitel1.tex,v 1.24 2020/03/13 16:02:34 vollmer Exp $
+%% -*- coding: utf-8 -*-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Abstand zwischen Paragraphen und Einzug entfernen
+\setlength{\parskip}{1em}  % Abstand zwischen Paragraphen (1em = Schriftgröße)
+\setlength{\parindent}{0pt}  % Kein Einzug am Anfang eines Paragraphen
+
+\chapter{Risiken}
+\begin{table}[h!]
+    \centering
+    \small
+    \begin{tabular}{|l|p{5cm}|c|c|c|}
+        \hline
+        \textbf{Risiko} & \textbf{Beschreibung} & \textbf{\%$^1$} & \textbf{Einfluss$^2$} & \textbf{Risikofaktor$^3$} \\
+        \hline
+        R1 & KI-Modell liefert ungenaues oder unbrauchbares Feedback & 25 & 8 & 200 \\
+        \hline
+        R2 & Technische Probleme bei der Implementierung der Softwareplattform & 20 & 7 & 140 \\
+        \hline
+        R3 & Datenschutz- oder Compliance-Probleme bei Nutzung von echten Schreibdaten & 15 & 9 & 135 \\
+        \hline
+        R4 & Verzögerungen bei der Entwicklung oder Testphase durch Zeitmangel & 30 & 6 & 180 \\
+        \hline
+        R5 & Studierende beteiligen sich nicht ausreichend an Testphasen & 20 & 5 & 100 \\
+        \hline
+        R6 & Interaktive Dialogfunktionen der KI funktionieren unter realen Bedingungen nicht zuverlässig & 25 & 7 & 175 \\
+        \hline
+    \end{tabular}
+    \caption{Risikoeinschätzung: Eintrittswahrscheinlichkeit, Einfluss und Risikofaktor.}
+\end{table}
+
+\noindent
+\textbf{Legende:}
+$^1$ Eintrittswahrscheinlichkeit in Prozent
+$^2$ Einfluss auf das Projekt (1 = gering, 10 = sehr gravierend)
+$^3$ Risikofaktor = Eintrittswahrscheinlichkeit × Einfluss
+
+\begin{table}[h!]
+    \centering
+    \small
+    \begin{tabular}{|l|p{8cm}|p{4cm}|}
+        \hline
+        \textbf{Risiko} & \textbf{Risikominderung} & \textbf{Zuständig} \\
+        \hline
+        R1 & Alternative KI-Ansätze prüfen, Validierung mit realen Datensätzen durchführen & Entwicklungsteam \\
+        \hline
+        R2 & Vorab Tests der Softwareplattform, Backup-Lösungen vorbereiten & Entwicklungsteam \\
+        \hline
+        R3 & Datenschutzkonzept erstellen, Nutzung anonymisierter Daten & Projektleiter, Entwicklungsteam \\
+        \hline
+        R4 & Zeitpuffer einplanen, parallele Bearbeitung von Tasks & Projektleiter \\
+        \hline
+        R5 & Studierende frühzeitig einbinden, regelmäßige Feedback-Runden & Entwicklungsteam \\
+        \hline
+        R6 & Umfangreiche Tests der Dialogfunktionen, iterative Anpassungen & Entwicklungsteam \\
+        \hline
+    \end{tabular}
+    \caption{Maßnahmen zur Risikominimierung und Zuständigkeiten.}
+\end{table}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
