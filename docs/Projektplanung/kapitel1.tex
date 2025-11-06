@@ -1,0 +1,79 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Descr:       Vorlage für Berichte der DHBW-Karlsruhe, Ein Kapitel
+%% Author:      Prof. Dr. Jürgen Vollmer, vollmer@dhbw-karlsruhe.de
+%% $Id: kapitel1.tex,v 1.24 2020/03/13 16:02:34 vollmer Exp $
+%% -*- coding: utf-8 -*-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Abstand zwischen Paragraphen und Einzug entfernen
+\setlength{\parskip}{1em}  % Abstand zwischen Paragraphen (1em = Schriftgröße)
+\setlength{\parindent}{0pt}  % Kein Einzug am Anfang eines Paragraphen
+
+\chapter{Projektablaufplan}
+\textbf{Zeitraum:} 01.10.2025 – 04.05.2026
+
+Der Projektzeitraum umfasst zwei Semester und deckt alle Phasen von der Vorbereitung über die Konzeptentwicklung und Prototyping bis hin zu Testing, Optimierung und Abschlussdokumentation ab.
+
+\begin{figure}[H]
+\centering
+\fbox{\includegraphics[width=\textwidth]{gantt_diagramm}}
+\caption{Projektablaufplan (Gantt-Diagramm) des KI-gestützten Schreib-Tutors}
+\label{fig:gantt}
+\end{figure}
+\textbf{Legende:}
+Gelb markierte Einträge kennzeichnen die definierten Meilensteine des Projekts.
+Hellblau hinterlegte Aufgaben stellen Maßnahmen zur Qualitätssicherung dar.
+Die in Hellgrau dargestellten Balken sowie die vertikalen Trennlinien visualisieren die
+übergeordneten Projektphasen. Alle übrigen Balken entsprechen regulären Arbeitspaketen.
+
+
+
+
+\paragraph{Projektvorbereitung (01.10.2025 -- 25.10.2025)}
+Infrastruktur und Organisation für das Projekt aufbauen, Team bilden und Aufgaben verteilen, Entwicklungsumgebung einrichten.
+\begin{itemize}
+    \item \textbf{Themen- und Gruppenfindung (01.10.2025 -- 10.10.2025):} Bildung des Projektteams, Auswahl des Projektthemas innerhalb des Teams, Zuweisung von Rollen innerhalb der Gruppe.
+    \item \textbf{QS-Maßnahmen: Besprechung mit Betreuer (06.10.2025 -- 10.10.2025):} Frühzeitige Rücksprache mit Betreuer zu Zielen, Anforderungen und Planung.
+    \item \textbf{Meilenstein: Themenmitteilung (10.10.2025):} Offizielle Einreichung der Themenmitteilung des Projektes an der DHBW.
+    \item \textbf{Einrichtung der Arbeitsumgebung (10.10.2025 -- 25.10.2025):} Installation und Konfiguration der Entwicklungsumgebungen, Erstellung eines GitHub-Repositories sowie Einrichtung der erforderlichen Schreibwerkzeuge.
+    \item \textbf{Meilenstein: Kick-off-Besprechung (25.10.2025):} Besprechung mit Projektteam und Betreuer zum offiziellen Start des Projektes.
+\end{itemize}
+
+\paragraph{Konzeptentwicklung (26.10.2025 -- 07.12.2025)}
+Funktionen und Systemarchitektur des KI-Schreib-Tutors konzipieren, didaktische Leitlinien und Interaktionslogik festlegen.
+\begin{itemize}
+    \item \textbf{Spezifikation der Funktionen (26.10.2025 -- 07.11.2025):} Lasten- und Pflichtenheft erstellen, Systemziele und Anforderungen detailliert ausarbeiten.
+    \item \textbf{Recherche zu KI-Modellen (08.11.2025 -- 21.11.2025):} Geeignete Sprachmodelle, Feedbackmethoden und Dialogstrategien auswählen.
+    \item \textbf{QS-Maßnahmen: Risikoanalyse (14.11.2025 -- 21.11.2025):} Untersuchung potenziell auftretender Risiken sowie Bewertung von deren Auswirkungen und Eintrittswahrscheinlichkeit.
+    \item \textbf{Vergleich verschiedener Ansätze (22.11.2025 -- 07.12.2025):} Analyse und Bewertung verschiedener KI-Modelle, Methoden zur Rückfragegenerierung und Feedbackstrategien.
+    \item \textbf{Meilenstein: Erstes Kozept (07.12.2025):} Erstes System- und Funktionskonzept abgestimmt.
+\end{itemize}
+
+\paragraph{Prototyping (08.12.2025 -- 13.02.2026)}
+Entwicklung und Integration der ersten Softwaremodule für den KI-Schreib-Tutor, Implementierung der dialogischen Rückfragen und grundlegender Feedbackmechanismen.
+\begin{itemize}
+    \item \textbf{Implementierung Software-Prototyp (08.12.2025 -- 23.12.2025):} Entwicklung der Basismodule, Integration der Feedbacklogik, Textanalyse und Datenverarbeitung.
+    \item \textbf{GUI-Integration und Dialoglogik (24.12.2025 -- 20.01.2026):} Erstellung der Benutzeroberfläche, Implementierung der Dialogstrukturen und Eingabefunktionen.
+    \item \textbf{Integration bestehender Komponenten (21.01.2026 -- 13.02.2026):} Zusammenführung aller Module, Anpassung bestehender Codes, Optimierung der Systemstabilität.
+    \item \textbf{QS-Maßnahmen: Testing (10.01.2026 -- 13.02.2026):} Funktionstests, Code-Reviews und iterative Verbesserungen zur Sicherstellung der Softwarequalität.
+    \item \textbf{Meilenstein: Erster Prototyp (13.02.2026):} Fertigstellung des ersten lauffähigen Prototyps des KI-Tutors.
+\end{itemize}
+
+\paragraph{Testing, Evaluation und Optimierung (14.02.2026 -- 31.03.2026)}
+Umfassende Testphase zur Evaluation der Funktionalität, Usability und Lernwirksamkeit des KI-Schreib-Tutors sowie Umsetzung notwendiger Verbesserungen.
+\begin{itemize}
+    \item \textbf{System- und Feldtests (14.02.2026 -- 28.02.2026):} Überprüfung der Software im realen Nutzungskontext, Sammlung von Feedback durch Studierende.
+    \item \textbf{Analyse der Testergebnisse (01.03.2026 -- 10.03.2026):} Auswertung der Testergebnisse, Identifikation von Schwachstellen und Verbesserungspotential.
+    \item \textbf{Verbesserungsschleifen (11.03.2026 -- 31.03.2026):} Optimierung der KI-Dialoge, Verbesserung der Argumentations-Feedbacklogik und Anpassung der Benutzeroberfläche.
+    \item \textbf{QS-Maßnahmen: Evaluation (14.02.2026 -- 31.03.2026):} Kontinuierliche Überprüfung der Lernförderlichkeit, Begleitung der Test- und Optimierungsprozesse, Dokumentation aller Anpassungen und Qualitätssicherung.
+    \item \textbf{Meilenstein: Ende Optimierung (31.03.2026):} Abschluss der Test- und Optimierungsphase.
+\end{itemize}
+
+\paragraph{Abschluss und Dokumentation (01.04.2026 -- 04.05.2026)}
+Erstellung der abschließenden Projektdokumentation, Reflexion der Ergebnisse und Vorbereitung der Präsentation des KI-Schreib-Tutors.
+\begin{itemize}
+    \item \textbf{Erstellung Abschlussbericht (01.04.2026 -- 20.04.2026):} Zusammenfassung der Projektergebnisse, wissenschaftliche Auswertung und Reflexion der Zielerreichung.
+    \item \textbf{Vorbereitung Präsentation (21.04.2026 -- 04.05.2026):} Erstellung der Präsentationsunterlagen, Demonstration des Prototyps und Feinschliff der Darstellung.
+    \item \textbf{Meilenstein: Abschluss (04.05.2026):} Projektabschluss mit finaler Abgabe und Präsentation.
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
